@@ -29,14 +29,35 @@ header nav a {
     text-decoration: none;
 }
 
+#copyright a {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+
 #inicio {
     display: flex;
     align-items: center;
     gap: 32px;
-    /*topo,direira, baixo, esquerda */
     padding: 24px 80px 128px 80px;
     position: relative;
 }
+
+#inicio img {
+    width: 50%; /* Define a largura da imagem como 100% do contêiner pai */
+    height: auto; /* Garante que a altura seja ajustada proporcionalmente */
+    /* Define a largura máxima da imagem para evitar que fique muito grande */
+}
+
+/*#inicio {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    /*topo,direira, baixo, esquerda */
+    /*padding: 24px 80px 128px 80px;
+    position: relative;
+}
+*/
 
 h1,
 h2 {
@@ -48,6 +69,12 @@ h2 {
 .paragrafo {
     line-height: 150%;
     margin-bottom: 32px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Outras propriedades de layout necessárias */
 }
 
 .botao {
@@ -78,6 +105,11 @@ h2 {
     align-items: center;
     gap: 64px;
     padding: 64px 80px;
+}
+
+#clinica img {
+    max-width: 50%;
+    height: auto;
 }
 
 #clinica li {
@@ -118,7 +150,14 @@ h2 {
     font-size: 16px;
 }
 
-.duvida img {
+#duvidas .imagem-principal {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#duvida .outra-imagem {
     position: absolute;
     top: 32px;
     right: 24px;
